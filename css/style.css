@@ -98,6 +98,11 @@ body {
   flex-direction: column;
 }
 
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
 header {
   width: 100%;
   background-color: #191919;
@@ -108,9 +113,9 @@ header .top-header {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin: 70px 50px;
+  margin: 70px 0px;
 }
 
 header .top-header__foto {
@@ -196,11 +201,11 @@ header .top-header__info .info-block-bio .bio-block_02 {
 
 #social-info {
   width: 100%;
+  background-color: #333333;
 }
 
 #social-info .social-links .social-icons {
   width: 100%;
-  background-color: #333333;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -222,7 +227,7 @@ header .top-header__info .info-block-bio .bio-block_02 {
   transition: .2s;
 }
 
-#education .section-ttl {
+.section-ttl {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -230,11 +235,11 @@ header .top-header__info .info-block-bio .bio-block_02 {
   width: 100%;
 }
 
-#education .section-ttl .section-ttl-block {
-  width: 68%;
+.section-ttl .section-ttl-block {
+  width: 100%;
 }
 
-#education .section-ttl .section-ttl-block h2 {
+.section-ttl .section-ttl-block h2 {
   width: 50%;
   font-size: 30px;
   font-weight: 800;

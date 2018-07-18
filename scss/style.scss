@@ -17,6 +17,11 @@ body {
   flex-direction: column;
 }
 
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
 header {
   width: 100%;
   background-color: #191919;
@@ -26,9 +31,9 @@ header {
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin: 70px 50px;
+    margin: 70px 0px;
 
     &__foto {
       width: 300px;
@@ -115,12 +120,12 @@ header {
 
 #social-info {
   width: 100%;
+  background-color: #333333;
 
   .social-links {
 
     .social-icons {
       width: 100%;
-      background-color: #333333;
       display: -webkit-flex;
       display: -ms-flex;
       display: flex;
@@ -144,26 +149,27 @@ header {
   }
 }
 
-#education {
+.section-ttl {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 
-  .section-ttl {
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    justify-content: center;
+
+
+  .section-ttl-block {
     width: 100%;
 
-
-
-    .section-ttl-block {
-      width: 68%;
-
-      h2 {
-        width: 50%;
-        font-size: 30px;
-        font-weight: 800;
-        border-bottom: 2px solid #000;
-      }
+    h2 {
+      width: 50%;
+      font-size: 30px;
+      font-weight: 800;
+      border-bottom: 2px solid #000;
     }
   }
+}
+
+#education {
+
 }
