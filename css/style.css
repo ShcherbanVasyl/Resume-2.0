@@ -85,7 +85,6 @@
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  border: 1px solid red;
 }
 
 body {
@@ -240,8 +239,99 @@ header .top-header__info .info-block-bio .bio-block_02 {
 }
 
 .section-ttl .section-ttl-block h2 {
-  width: 50%;
-  font-size: 30px;
+  margin: 0;
+  margin-left: 30px;
+  margin-bottom: 40px;
+  width: 60%;
+  font-size: 40px;
   font-weight: 800;
   border-bottom: 2px solid #000;
+}
+
+.info-block {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  padding-left: 30px;
+  border-left: 2px solid black;
+}
+
+#education {
+  padding: 60px 0;
+  background-color: #eeefed;
+}
+
+#education .info-block {
+  padding-left: 30px;
+  border-left: 2px solid black;
+  flex-direction: column;
+}
+
+#education .info-block h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+#education .info-block .university {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin: 22px 0;
+}
+
+#education .info-block .university a {
+  font-size: 24px;
+  font-weight: 800;
+  text-decoration: none;
+  color: #000;
+}
+
+#education .info-block .university a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #3a3a3a;
+  -webkit-transition: width .6s;
+  transition: width .6s;
+}
+
+#education .info-block .university a:hover {
+  color: #3a3a3a;
+}
+
+#education .info-block .university a:hover::after {
+  width: 100%;
+}
+
+#education .info-block span {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+#skills {
+  padding: 60px 0;
+  background-color: #eeefed;
+}
+
+#skills .info-block {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+#skills .info-block .chip {
+  border-radius: 2px;
+  padding: 12px 12px;
+  font-size: 20px;
+  font-weight: 600;
+  transition: .2s;
+}
+
+#skills .info-block .chip:hover {
+  background-color: #333333;
+  color: #fff;
 }
