@@ -335,3 +335,44 @@ header .top-header__info .info-block-bio .bio-block_02 {
   background-color: #333333;
   color: #fff;
 }
+
+#hobbies {
+  padding: 60px 0;
+  background-color: #eeefed;
+}
+
+#hobbies .info-block {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+#hobbies .info-block .hobbies-block {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 16px;
+  border: 2px solid black;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+#hobbies .info-block .hobbies-block:hover {
+  transition: all, .4s;
+  background-color: #000;
+  color: #fff;
+}
+
+#hobbies .info-block .hobbies-block .hobbies-icons {
+  font-size: 30px;
+}
+
+#hobbies .info-block .hobbies-block span {
+  padding-top: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}

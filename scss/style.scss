@@ -261,3 +261,45 @@ header {
     }
   }
 }
+
+#hobbies {
+  padding: 60px 0;
+  background-color: #eeefed;
+
+  .info-block {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+
+
+    .hobbies-block {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0px 16px;
+      border: 2px solid black;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+
+      &:hover {
+        transition: all, .4s;
+        background-color: #000;
+        color: #fff;
+      }
+
+      .hobbies-icons {
+        font-size: 30px;
+      }
+
+      span {
+        padding-top: 4px;
+        font-size: 12px;
+        font-weight: 600;
+      }
+    }
+  }
+}
