@@ -303,3 +303,49 @@ header {
     }
   }
 }
+
+#portfolio {
+  padding: 60px 0;
+  background-color: #212121;
+
+  .section-ttl-block {
+    h2 {
+      color: #fff;
+      border-bottom: 2px solid #fff;
+    }
+  }
+
+  .info-block {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-left: 2px solid #fff;
+
+    .portfolio-item__inside {
+      position: relative;
+      margin: 10px 0px;
+      width: 210px;
+      height: 250px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .portfolio-item__discr {
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+      }
+    }
+  }
+}
